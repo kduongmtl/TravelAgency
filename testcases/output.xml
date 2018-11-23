@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181123 17:29:30.901">
+<suite id="s1" name="Test Travel Login" source="C:\Automation\TravelAgency\testcases\Test_Travel_Login.robot">
+<kw name="Open Login Page" library="resource" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20181123 17:29:31.418" level="INFO">Opening browser 'Chrome' to base url 'http://blazedemo.com/index.php/'.</msg>
+<status status="PASS" starttime="20181123 17:29:31.417" endtime="20181123 17:29:35.686"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" starttime="20181123 17:29:35.687" endtime="20181123 17:29:35.688"></status>
+</kw>
+<status status="PASS" starttime="20181123 17:29:31.416" endtime="20181123 17:29:35.688"></status>
+</kw>
+<test id="s1-t1" name="Case1">
+<kw name="Choose Destination City">
+<arguments>
+<arg>Portland</arg>
+<arg>London</arg>
+</arguments>
+<kw name="Select Departure City" library="resource">
+<arguments>
+<arg>${departureCity}</arg>
+</arguments>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>fromPort</arg>
+<arg>${departureCity}</arg>
+</arguments>
+<msg timestamp="20181123 17:29:35.691" level="INFO">Selecting options from selection list 'fromPort' by value Portland.</msg>
+<status status="PASS" starttime="20181123 17:29:35.691" endtime="20181123 17:29:41.842"></status>
+</kw>
+<status status="PASS" starttime="20181123 17:29:35.690" endtime="20181123 17:29:41.842"></status>
+</kw>
+<kw name="Select Departure City" library="resource">
+<arguments>
+<arg>${destinationCity}</arg>
+</arguments>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>fromPort</arg>
+<arg>${departureCity}</arg>
+</arguments>
+<msg timestamp="20181123 17:29:41.844" level="INFO">Selecting options from selection list 'fromPort' by value London.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181123 17:29:47.184" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181123 17:29:45.896" endtime="20181123 17:29:47.184"></status>
+</kw>
+<msg timestamp="20181123 17:29:47.228" level="FAIL">NoSuchElementException: Message: Cannot locate option with value: London
+</msg>
+<status status="FAIL" starttime="20181123 17:29:41.843" endtime="20181123 17:29:47.228"></status>
+</kw>
+<status status="FAIL" starttime="20181123 17:29:41.843" endtime="20181123 17:29:47.228"></status>
+</kw>
+<status status="FAIL" starttime="20181123 17:29:35.690" endtime="20181123 17:29:47.229"></status>
+</kw>
+<status status="FAIL" starttime="20181123 17:29:35.688" endtime="20181123 17:29:47.229" critical="yes">NoSuchElementException: Message: Cannot locate option with value: London
+</status>
+</test>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20181123 17:29:47.231" endtime="20181123 17:29:51.350"></status>
+</kw>
+<status status="FAIL" starttime="20181123 17:29:30.915" endtime="20181123 17:29:51.350"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test Travel Login">Test Travel Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
