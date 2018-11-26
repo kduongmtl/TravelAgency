@@ -33,4 +33,5 @@ ${logo_Desjardins}  //img[@class="logoDesjardins"]
 ${votreProfil_LINK}  //*[@id="contenu"]/div[1]/div/div/div/div[2]/div[2]/ul/li[2]/a
 
 ${save_BTN}  //input[@class="btn btn-primary"]
+${findFlights_BTN}  //input[@class="btn btn-primary"]
 

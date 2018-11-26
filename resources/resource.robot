@@ -32,6 +32,13 @@ Select Destination City
     [Arguments]  ${destinationCity}
     Select From List by Value  toPort  ${destinationCity}
 
+Find Flights
+    Click Element  ${findFlights_BTN}
+
+
+Select A Flight
+    [Arguments]  ${flightChoice}
+    Click Element  //tr[${flightChoice}]/td[1]/input[@class="btn btn-small"]
 
 
 Enter First Name
