@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13aa5701-a827-4249-8843-76cce428c95f" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/resource.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/resource.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/variables.robot" beforeDir="false" afterPath="$PROJECT_DIR$/resources/variables.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/Test_Travel_Login.robot" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/Test_Travel_Login.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/log.html" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/log.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testcases/output.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/output.xml" afterDir="false" />
@@ -32,8 +28,8 @@
       <file leaf-file-name="resource.robot" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/resource.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="32" />
+            <state relative-caret-position="400">
+              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
               <folding>
                 <element signature="e#0#361#0" expanded="true" />
               </folding>
@@ -44,10 +40,15 @@
       <file leaf-file-name="Test_Travel_Login.robot" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcases/Test_Travel_Login.robot">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+            <state relative-caret-position="304">
+              <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="selenium-screenshot-4.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases/selenium-screenshot-4.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="Test_Desjardins_scholarship_Login.robot" pinned="false" current-in-tab="false">
@@ -158,10 +159,10 @@
     <frame x="55" y="47" width="1611" height="894" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24968395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24968395" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32987013" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32987013" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -318,6 +319,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/Python3/Lib/site-packages/robotframework-3.0.4-py3.6.egg/robot/libraries/Remote.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3712">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/variables.robot">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="381">
@@ -327,18 +335,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/resource.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="32" />
+        <state relative-caret-position="400">
+          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#361#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/selenium-screenshot-4.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcases/Test_Travel_Login.robot">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+        <state relative-caret-position="304">
+          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
         </state>
       </provider>
     </entry>

@@ -17,7 +17,10 @@ Choose Destination City
   Select Destination City  ${destinationCity}
   Find Flights
   #Click Element  //tr[4]/td[1]/input[@class="btn btn-small"]
+  Page Should Contain   Flights from Portland to London
   Select A Flight  ${flightChoice}
+
+
 
 
 
