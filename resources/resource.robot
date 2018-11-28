@@ -41,13 +41,65 @@ Select A Flight
     Click Element  //tr[${flightChoice}]/td[1]/input[@class="btn btn-small"]
 
 
-Enter First Name
-    [Arguments]  ${firstName}
-    Input Text  Prenom  ${firstName}
+#Fill Form
 
-Enter Last Name
-    [Arguments]  ${lastName}
-    Input Text  Nom  ${lastName}
+Enter Full Name
+    [Arguments]  ${fullName}
+    Input Text  inputName  ${fullName}
+
+Enter Address
+    [Arguments]  ${address}
+    Input Text  address  ${address}
+
+Enter City
+    [Arguments]  ${city}
+    Input Text    city  ${city}
+
+Enter State
+    [Arguments]  ${state}
+    Input Text  state  ${state}
+
+Enter Zip Code
+    [Arguments]  ${zipCode}
+    Input Text  zipCode  ${zipCode}
+
+Select Card Type
+    [Arguments]  ${cardType}
+    Select From List by Value  cardType  ${cardType}
+
+
+Enter Credit Card Number
+    [Arguments]  ${creditCardNumber}
+    Input Text  creditCardNumber  ${creditCardNumber}
+
+
+Enter Credit Card Month
+    [Arguments]  ${creditCardMonth}
+    Input Text  creditCardMonth  ${creditCardMonth}
+
+
+Enter Credit Card Year
+    [Arguments]  ${creditCardYear}
+    Input Text  creditCardYear  ${creditCardYear}
+
+
+Enter Name On Card
+    [Arguments]  ${nameOnCard}
+    Input Text  nameOnCard  ${nameOnCard}
+
+Purchase Flight
+    Click Element  //input[@class="btn btn-primary"]
+
+
+
+
+
+
+
+
+
+
+
 
 #Enter Email
 #    [Arguments]  ${email}
@@ -85,80 +137,4 @@ Reconnect
 Disconnect
     Click Element  ${deconnecter_BTN}
 
-
-
-# Candidate Profile
-Click Profile
-    Click Element  ${votreProfil_LINK}
-
-Enter Street and Number
-    [Arguments]  ${streetNumber}
-    Input Text  Adresse  ${streetNumber}
-
-
-Enter Appartment
-    [Arguments]  ${aptNumber}
-    Input Text  appartement  ${aptNumber}
-
-
-Enter City
-    [Arguments]  ${city}
-    Input Text  Ville  ${city}
-
-
-Select Province
-    [Arguments]  ${provinceId}
-    Select From List by Value  Province  ${provinceId}
-
-
-Enter Postal Code
-    [Arguments]  ${postalCode}
-    Input Text  CodePostal  ${postalCode}
-
-
-Enter Phone Number
-    [Arguments]  ${phoneNumber}
-    Input Text  TelephonePrincipal  ${phoneNumber}
-
-
-Select Phone Type
-    [Arguments]  ${phoneType}
-    Select From List by Value  TypeTelephonePrincipal  ${phoneType}
-
-
-Select Financial Institution
-    [Arguments]  ${selectChoice}
-    Select Radio Button  MembreCaissePrincipale  ${selectChoice}
-    #Select Radio Button  //*[@id="MembreCaissePrincipale"]  ${selectChoice}
-
-Click Yes
-    Click Element  //*[@id="MembreCaissePrincipale"]
-
-Find Text
-    Click Element  //*[@id="contenu"]/div[2]/div/div/div[2]/div/form/div[15]/div/fieldset/legend
-
-Select Province From Main Financial Institution
-    [Arguments]  ${selectProvince}
-    Select Radio Button  ProvinceCaisseDesjardinsPrincipale  ${selectProvince}
-
-
-Select Additional Caisse
-    [Arguments]  ${selectChoiceSec}
-    Select Radio Button  MembreCaisseSecondaire  ${selectChoiceSec}
-
-Select Caisse Province
-    [Arguments]  ${city}
-    Input Text  appartement  ${city}
-
-
-Enter Transit Number
-    [Arguments]  ${transitNumber}
-    Input Text  MembreCaissePrincipaleTransitNumber2  ${transitNumber}
-
-
-Save Profile
-    Click Element  ${save_BTN}
-
-
-# Diversity Section
 

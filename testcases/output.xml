@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181127 17:37:01.168">
+<robot generator="Robot 3.0.4 (Python 3.6.5 on win32)" generated="20181128 17:28:21.122">
 <suite id="s1" name="Test Travel Login" source="C:\Automation\TravelAgency\testcases\Test_Travel_Login.robot">
 <kw name="Open Login Page" library="resource" type="setup">
 <kw name="Open Browser" library="Selenium2Library">
@@ -8,17 +8,17 @@
 <arg>${LOGIN URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20181127 17:37:01.609" level="INFO">Opening browser 'Chrome' to base url 'http://blazedemo.com/index.php/'.</msg>
-<status status="PASS" starttime="20181127 17:37:01.608" endtime="20181127 17:37:05.705"></status>
+<msg timestamp="20181128 17:28:21.581" level="INFO">Opening browser 'Chrome' to base url 'http://blazedemo.com/index.php/'.</msg>
+<status status="PASS" starttime="20181128 17:28:21.581" endtime="20181128 17:28:25.683"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" starttime="20181127 17:37:05.705" endtime="20181127 17:37:05.706"></status>
+<status status="PASS" starttime="20181128 17:28:25.683" endtime="20181128 17:28:25.684"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:01.607" endtime="20181127 17:37:05.706"></status>
+<status status="PASS" starttime="20181128 17:28:21.580" endtime="20181128 17:28:25.684"></status>
 </kw>
 <test id="s1-t1" name="Case1">
 <kw name="Choose Destination City">
@@ -26,6 +26,16 @@
 <arg>Portland</arg>
 <arg>London</arg>
 <arg>2</arg>
+<arg>Martin Leclair</arg>
+<arg>777 Luck</arg>
+<arg>L.A.</arg>
+<arg>CA</arg>
+<arg>90210</arg>
+<arg>visa</arg>
+<arg>4111111111111111</arg>
+<arg>08</arg>
+<arg>2027</arg>
+<arg>Martin Leclair</arg>
 </arguments>
 <kw name="Select Departure City" library="resource">
 <arguments>
@@ -37,10 +47,10 @@
 <arg>fromPort</arg>
 <arg>${departureCity}</arg>
 </arguments>
-<msg timestamp="20181127 17:37:05.709" level="INFO">Selecting options from selection list 'fromPort' by value Portland.</msg>
-<status status="PASS" starttime="20181127 17:37:05.709" endtime="20181127 17:37:11.856"></status>
+<msg timestamp="20181128 17:28:25.687" level="INFO">Selecting options from selection list 'fromPort' by value Portland.</msg>
+<status status="PASS" starttime="20181128 17:28:25.686" endtime="20181128 17:28:31.832"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:05.708" endtime="20181127 17:37:11.856"></status>
+<status status="PASS" starttime="20181128 17:28:25.686" endtime="20181128 17:28:31.832"></status>
 </kw>
 <kw name="Select Destination City" library="resource">
 <arguments>
@@ -52,10 +62,10 @@
 <arg>toPort</arg>
 <arg>${destinationCity}</arg>
 </arguments>
-<msg timestamp="20181127 17:37:11.858" level="INFO">Selecting options from selection list 'toPort' by value London.</msg>
-<status status="PASS" starttime="20181127 17:37:11.857" endtime="20181127 17:37:18.002"></status>
+<msg timestamp="20181128 17:28:31.834" level="INFO">Selecting options from selection list 'toPort' by value London.</msg>
+<status status="PASS" starttime="20181128 17:28:31.833" endtime="20181128 17:28:37.959"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:11.857" endtime="20181127 17:37:18.002"></status>
+<status status="PASS" starttime="20181128 17:28:31.833" endtime="20181128 17:28:37.959"></status>
 </kw>
 <kw name="Find Flights" library="resource">
 <kw name="Click Element" library="Selenium2Library">
@@ -63,18 +73,18 @@
 <arguments>
 <arg>${findFlights_BTN}</arg>
 </arguments>
-<msg timestamp="20181127 17:37:18.004" level="INFO">Clicking element '//input[@class="btn btn-primary"]'.</msg>
-<status status="PASS" starttime="20181127 17:37:18.003" endtime="20181127 17:37:20.695"></status>
+<msg timestamp="20181128 17:28:37.960" level="INFO">Clicking element '//input[@class="btn btn-primary"]'.</msg>
+<status status="PASS" starttime="20181128 17:28:37.960" endtime="20181128 17:28:40.686"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:18.003" endtime="20181127 17:37:20.696"></status>
+<status status="PASS" starttime="20181128 17:28:37.959" endtime="20181128 17:28:40.686"></status>
 </kw>
 <kw name="Page Should Contain" library="Selenium2Library">
 <doc>Verifies that current page contains ``text``.</doc>
 <arguments>
 <arg>Flights from Portland to London</arg>
 </arguments>
-<msg timestamp="20181127 17:37:22.727" level="INFO">Current page contains text 'Flights from Portland to London'.</msg>
-<status status="PASS" starttime="20181127 17:37:20.696" endtime="20181127 17:37:22.727"></status>
+<msg timestamp="20181128 17:28:42.714" level="INFO">Current page contains text 'Flights from Portland to London'.</msg>
+<status status="PASS" starttime="20181128 17:28:40.687" endtime="20181128 17:28:42.714"></status>
 </kw>
 <kw name="Select A Flight" library="resource">
 <arguments>
@@ -85,20 +95,186 @@
 <arguments>
 <arg>//tr[${flightChoice}]/td[1]/input[@class="btn btn-small"]</arg>
 </arguments>
-<msg timestamp="20181127 17:37:22.729" level="INFO">Clicking element '//tr[2]/td[1]/input[@class="btn btn-small"]'.</msg>
-<status status="PASS" starttime="20181127 17:37:22.728" endtime="20181127 17:37:25.475"></status>
+<msg timestamp="20181128 17:28:42.716" level="INFO">Clicking element '//tr[2]/td[1]/input[@class="btn btn-small"]'.</msg>
+<status status="PASS" starttime="20181128 17:28:42.715" endtime="20181128 17:28:45.469"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:22.727" endtime="20181127 17:37:25.475"></status>
+<status status="PASS" starttime="20181128 17:28:42.714" endtime="20181128 17:28:45.469"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:05.707" endtime="20181127 17:37:25.475"></status>
+<kw name="Enter Full Name" library="resource">
+<arguments>
+<arg>${fullName}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>inputName</arg>
+<arg>${fullName}</arg>
+</arguments>
+<msg timestamp="20181128 17:28:45.471" level="INFO">Typing text 'Martin Leclair' into text field 'inputName'.</msg>
+<status status="PASS" starttime="20181128 17:28:45.471" endtime="20181128 17:28:48.662"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:05.706" endtime="20181127 17:37:25.476" critical="yes"></status>
+<status status="PASS" starttime="20181128 17:28:45.470" endtime="20181128 17:28:48.662"></status>
+</kw>
+<kw name="Enter Address" library="resource">
+<arguments>
+<arg>${address}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>address</arg>
+<arg>${address}</arg>
+</arguments>
+<msg timestamp="20181128 17:28:48.664" level="INFO">Typing text '777 Luck' into text field 'address'.</msg>
+<status status="PASS" starttime="20181128 17:28:48.664" endtime="20181128 17:28:51.876"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:28:48.663" endtime="20181128 17:28:51.876"></status>
+</kw>
+<kw name="Enter City" library="resource">
+<arguments>
+<arg>${city}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>city</arg>
+<arg>${city}</arg>
+</arguments>
+<msg timestamp="20181128 17:28:51.878" level="INFO">Typing text 'L.A.' into text field 'city'.</msg>
+<status status="PASS" starttime="20181128 17:28:51.877" endtime="20181128 17:28:55.006"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:28:51.877" endtime="20181128 17:28:55.006"></status>
+</kw>
+<kw name="Enter State" library="resource">
+<arguments>
+<arg>${state}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>state</arg>
+<arg>${state}</arg>
+</arguments>
+<msg timestamp="20181128 17:28:55.008" level="INFO">Typing text 'CA' into text field 'state'.</msg>
+<status status="PASS" starttime="20181128 17:28:55.007" endtime="20181128 17:28:58.138"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:28:55.007" endtime="20181128 17:28:58.138"></status>
+</kw>
+<kw name="Enter Zip Code" library="resource">
+<arguments>
+<arg>${zipCode}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>zipCode</arg>
+<arg>${zipCode}</arg>
+</arguments>
+<msg timestamp="20181128 17:28:58.140" level="INFO">Typing text '90210' into text field 'zipCode'.</msg>
+<status status="PASS" starttime="20181128 17:28:58.139" endtime="20181128 17:29:01.262"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:28:58.138" endtime="20181128 17:29:01.262"></status>
+</kw>
+<kw name="Select Card Type" library="resource">
+<arguments>
+<arg>${cardType}</arg>
+</arguments>
+<kw name="Select From List By Value" library="Selenium2Library">
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<arguments>
+<arg>cardType</arg>
+<arg>${cardType}</arg>
+</arguments>
+<msg timestamp="20181128 17:29:01.264" level="INFO">Selecting options from selection list 'cardType' by value visa.</msg>
+<status status="PASS" starttime="20181128 17:29:01.263" endtime="20181128 17:29:06.336"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:29:01.262" endtime="20181128 17:29:06.336"></status>
+</kw>
+<kw name="Enter Credit Card Number" library="resource">
+<arguments>
+<arg>${creditCardNumber}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>creditCardNumber</arg>
+<arg>${creditCardNumber}</arg>
+</arguments>
+<msg timestamp="20181128 17:29:06.338" level="INFO">Typing text '4111111111111111' into text field 'creditCardNumber'.</msg>
+<status status="PASS" starttime="20181128 17:29:06.338" endtime="20181128 17:29:09.516"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:29:06.337" endtime="20181128 17:29:09.516"></status>
+</kw>
+<kw name="Enter Credit Card Month" library="resource">
+<arguments>
+<arg>${creditCardMonth}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>creditCardMonth</arg>
+<arg>${creditCardMonth}</arg>
+</arguments>
+<msg timestamp="20181128 17:29:09.518" level="INFO">Typing text '08' into text field 'creditCardMonth'.</msg>
+<status status="PASS" starttime="20181128 17:29:09.517" endtime="20181128 17:29:12.629"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:29:09.516" endtime="20181128 17:29:12.629"></status>
+</kw>
+<kw name="Enter Credit Card Year" library="resource">
+<arguments>
+<arg>${creditCardYear}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>creditCardYear</arg>
+<arg>${creditCardYear}</arg>
+</arguments>
+<msg timestamp="20181128 17:29:12.631" level="INFO">Typing text '2027' into text field 'creditCardYear'.</msg>
+<status status="PASS" starttime="20181128 17:29:12.630" endtime="20181128 17:29:15.749"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:29:12.629" endtime="20181128 17:29:15.749"></status>
+</kw>
+<kw name="Enter Name On Card" library="resource">
+<arguments>
+<arg>${nameOnCard}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>nameOnCard</arg>
+<arg>${nameOnCard}</arg>
+</arguments>
+<msg timestamp="20181128 17:29:15.751" level="INFO">Typing text 'Martin Leclair' into text field 'nameOnCard'.</msg>
+<status status="PASS" starttime="20181128 17:29:15.750" endtime="20181128 17:29:18.921"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:29:15.749" endtime="20181128 17:29:18.921"></status>
+</kw>
+<kw name="Purchase Flight" library="resource">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@class="btn btn-primary"]</arg>
+</arguments>
+<msg timestamp="20181128 17:29:18.922" level="INFO">Clicking element '//input[@class="btn btn-primary"]'.</msg>
+<status status="PASS" starttime="20181128 17:29:18.922" endtime="20181128 17:29:21.669"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:29:18.921" endtime="20181128 17:29:21.669"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20181128 17:29:22.941" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20181128 17:29:21.670" endtime="20181128 17:29:22.942"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:28:25.685" endtime="20181128 17:29:22.942"></status>
+</kw>
+<status status="PASS" starttime="20181128 17:28:25.684" endtime="20181128 17:29:22.942" critical="yes"></status>
 </test>
 <kw name="Close Browser" library="Selenium2Library" type="teardown">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20181127 17:37:25.477" endtime="20181127 17:37:29.814"></status>
+<status status="PASS" starttime="20181128 17:29:22.944" endtime="20181128 17:29:27.196"></status>
 </kw>
-<status status="PASS" starttime="20181127 17:37:01.179" endtime="20181127 17:37:29.814"></status>
+<status status="PASS" starttime="20181128 17:28:21.138" endtime="20181128 17:29:27.196"></status>
 </suite>
 <statistics>
 <total>
