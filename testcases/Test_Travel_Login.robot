@@ -3,7 +3,7 @@ Library  Dialogs
 Library  BuiltIn
 Resource    ../resources/resource.robot
 Suite Setup  Open login Page
-Suite Teardown    Close Browser
+#Suite Teardown    Close Browser
 Test Template  Choose Destination City
 
 **** Test Cases ***
@@ -30,6 +30,7 @@ Choose Destination City
   Enter Credit Card Year  ${creditCardYear}
   Enter Name On Card  ${nameOnCard}
   Purchase Flight
+  Page Should Contain  Thank you for your purchase today!
   Capture Page Screenshot
 
 
