@@ -21,6 +21,11 @@ Open Login Page
     Set Selenium Speed    ${DELAY}
 
 
+Open Register Page
+    Open Browser    ${REGISTER URL}    ${BROWSER}
+    Set Selenium Speed    ${DELAY}
+
+
 
 #Login Page
 Select Departure City
@@ -93,48 +98,41 @@ Purchase Flight
 
 
 
+#Register Page
+Enter Register Name
+    [Arguments]  ${nameRegister}
+    Input Text  name  ${nameRegister}
 
 
+Enter Company Name
+    [Arguments]  ${companyName}
+    Input Text  company  ${companyName}
 
 
+Enter Email Name
+    [Arguments]  ${email}
+    Input Text  email  ${email}
 
-
-
-
-#Enter Email
-#    [Arguments]  ${email}
-#    Input Text  Email  ${email}
-
-Enter Email Confirmation
-    [Arguments]  ${emailConfirmation}
-    Input Text  EmailConfirmation  ${emailConfirmation}
 
 Enter Password
     [Arguments]  ${password}
-    Input Text  Password  ${password}
+    Input Text  password  ${password}
 
-Enter Password Confirmation
-    [Arguments]  ${password}
-    Input Text  ConfirmPassword  ${password}
+Enter Confirm Password
+    [Arguments]  ${passwordConfirmed}
+    Input Text  password-confirm  ${passwordConfirmed}
 
-Enter Date of Birth
-    [Arguments]  ${dateOfBirth}
-    Input Text  DateNaissance  ${dateOfBirth}
-
-Accept Consent
-    Click Element  ${acceptationBoxText}
+Click Register
+    Click Element  ${register_BTN}
 
 
-Next Step
-    Click Element  ${suivant_BTN}
 
-Connect
-    Click Element  ${connecter_BTN}
 
-Reconnect
-    Click Element  ${connecter_LINK}
 
-Disconnect
-    Click Element  ${deconnecter_BTN}
+
+
+
+
+
 
 

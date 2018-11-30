@@ -3,11 +3,12 @@
 ${SERVER}         blazedemo.com/index.php
 ${BROWSER}        Chrome
 ${PROFILE}        ff_profile_dir=C:\\FirefoxProfile
-${DELAY}          1
+${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
 ${CREATE ACCOUNT URL}      http://${SERVER}/
 ${LOGIN URL}    http://${SERVER}/
+${REGISTER URL}  http://${SERVER}/register
 ${ERROR URL}      http://${SERVER}/error.html
 
 
@@ -34,4 +35,4 @@ ${votreProfil_LINK}  //*[@id="contenu"]/div[1]/div/div/div/div[2]/div[2]/ul/li[2
 
 ${save_BTN}  //input[@class="btn btn-primary"]
 ${findFlights_BTN}  //input[@class="btn btn-primary"]
-
+${register_BTN}  //button[@class="btn btn-primary"]
